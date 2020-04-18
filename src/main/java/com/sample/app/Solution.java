@@ -1,4 +1,7 @@
 package com.sample.app;
+
+import com.sample.app.Rooster.Sex;
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -13,7 +16,12 @@ public class Solution {
     	duck.swim();
     	Chicken chicken=new Chicken();
     	chicken.sing();
-    	chicken.fly();
+    	//chicken.fly();
+    	//Q3
+    	Rooster rooster=new Rooster();
+    	rooster.setSex(Sex.MALE);
+    	rooster.sing();
+    	
     	
     }
 }
