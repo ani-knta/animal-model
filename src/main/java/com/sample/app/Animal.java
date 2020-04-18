@@ -13,4 +13,8 @@ public abstract class Animal {
     void sing() {
         throw new UnsupportedOperationException("Animal can't sing");
     }
+
+    void swim() {
+        throw new UnsupportedOperationException("Animal can't swim");
+    }
 }

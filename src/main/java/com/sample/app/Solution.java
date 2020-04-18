@@ -28,6 +28,19 @@ public class Solution {
     	parrotwithCat.sing();
     	Parrot parrotWithRooster=new Parrot(new Rooster());
     	parrotWithRooster.sing();
-    	
+    	//QB1-3
+    	Fish fish= new Shark();
+    	fish.swim();
+    	//fish.sing();
+    	//fish.walk();    	
+    	Shark shark=new Shark();
+    	System.out.println(shark.makeJokes());
+    	System.out.println(shark.getColor());
+    	System.out.println(shark.getSize());
+
+    	Clownfish clownFish=new Clownfish();
+    	System.out.println(clownFish.makeJokes());
+    	System.out.println(clownFish.getColor());
+    	System.out.println(clownFish.getSize());
     }
 }
