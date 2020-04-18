@@ -42,5 +42,13 @@ public class Solution {
     	System.out.println(clownFish.makeJokes());
     	System.out.println(clownFish.getColor());
     	System.out.println(clownFish.getSize());
+    	//QD1-2
+    	Butterfly butterfly=new Butterfly();
+    	butterfly.fly();
+    	//butterfly.sing();
+    	Butterfly caterpillar=new Butterfly(true);
+    	caterpillar.walk();
+    	//caterpillar.fly();
+    	
     }
 }
