@@ -21,7 +21,13 @@ public class Solution {
     	Rooster rooster=new Rooster();
     	rooster.setSex(Sex.MALE);
     	rooster.sing();
-    	
+    	//Q4
+    	Parrot parrotWithDog=new Parrot(new Dog());
+    	parrotWithDog.sing();
+    	Parrot parrotwithCat=new Parrot(new Cat());
+    	parrotwithCat.sing();
+    	Parrot parrotWithRooster=new Parrot(new Rooster());
+    	parrotWithRooster.sing();
     	
     }
 }
