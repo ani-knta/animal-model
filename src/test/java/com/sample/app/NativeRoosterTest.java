@@ -64,7 +64,7 @@ public class NativeRoosterTest {
 	}
 	@After
 	public void finalize() {
-		
+		System.out.println("Completed");
 	}
 
 }
