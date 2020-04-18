@@ -5,6 +5,85 @@ import com.sample.app.Rooster.Sex;
 public class Solution {
 
     public static void main(String[] args) {
+    	//testAnimals(); // To test from Q [A-D]
+    	//[E] To find the Count of Animals 
+        Animal[] animals = new Animal[]{
+                new Bird(),
+                new Duck(),
+                new Chicken(),
+                new Rooster(),
+                new Parrot(new Dog()),
+                new Shark(),
+                new Clownfish(),
+                new Dolphin(),
+                new Dog(),
+                new Butterfly(),
+                new Cat()
+        };
+    	
+    }
+    public int countFly(Animal[] animals) {
+        int count = 0;
+        if(null==animals) {
+        	throw new RuntimeException("No animals added.");
+        }
+        for (Animal animal : animals) {
+            try {
+                animal.fly();
+                count++;
+            } catch (UnsupportedOperationException ex) {
+                // Do nothing
+            }
+        }
+        return count;
+    }
+    public int countWalk(Animal[] animals) {
+        int count = 0;
+        if(null==animals) {
+        	throw new RuntimeException("No animals added.");
+        }
+        for (Animal animal : animals) {
+            try {
+                animal.walk();
+                count++;
+            } catch (UnsupportedOperationException ex) {
+                // Do nothing
+            }
+        }
+        return count;
+    }
+    public int countSing(Animal[] animals) {
+    	if(null==animals) {
+        	throw new RuntimeException("No animals added.");
+        }
+    	int count = 0;
+        for (Animal animal : animals) {
+            try {
+                animal.sing();
+                count++;
+            } catch (UnsupportedOperationException ex) {
+                // Do nothing
+            }
+        }
+        return count;
+    }
+    public int countSwim(Animal[] animals) {
+        int count = 0;
+        if(null==animals) {
+        	throw new RuntimeException("No animals added.");
+        }
+        for (Animal animal : animals) {
+            try {
+                animal.swim();
+                count++;
+            } catch (UnsupportedOperationException ex) {
+                // Do nothing
+            }
+        }
+        return count;
+    }
+    
+    public static void testAnimals() {
     	//Q1
     	Bird bird=new Bird();
     	bird.walk();
@@ -49,6 +128,5 @@ public class Solution {
     	Butterfly caterpillar=new Butterfly(true);
     	caterpillar.walk();
     	//caterpillar.fly();
-    	
     }
 }
